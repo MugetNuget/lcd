@@ -1,5 +1,6 @@
 #include "lcd.h"
 
+
 static void lcd_pulse_enable(LCD *lcd) {
     gpio_put(lcd->en, 1);
     sleep_us(1);
